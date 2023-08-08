@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+header nav li {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+header nav li:last-child a {
+    margin-right: 220px;
+}
+
+.container {
+    display: grid;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    margin-left: 100px;
+    height: auto;
+    width: 45%;
+}
+
+#about h2, p {
+    margin-left: 30px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.loja-container {
+    margin-bottom: 100px;
+    max-width: 500px;
+}
+
+.loja-container h2 {
+    margin-bottom: 20px;
+}
+
+.loja-container h2:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+}
+
+.produtos {
+    margin-bottom: 70px;
+}
+
+.produtos:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    max-width: 1050px;
+}
+
+#products h1 {
+    margin-left: 0px;
+}
+
+#products img {
+    width: 230px;
+}
+
+h4 {
+    color: rgb(46, 46, 46);
+}
+
+.botao {
+    width: 225px;
+    height: 25px;
+    background-color: rgb(45, 86, 174);
+    color: white;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    margin-right: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(220, 230, 230);
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.products a {
+    width: calc(20% - 20px); 
+    margin-bottom: 20px;
+}
+
+#products a {
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.icon-container i {
+    position: absolute;
+    bottom: 93%;
+    right: 6%;
+    color: rgba(0, 0, 0, 0.737);
+    background-color: white;
+    display: none;
+}
+
+.icon-hide {
+    display: none;
+}
+
+@media screen and ( max-width: 767px) {
+    header {
+        background-color: rgb(0, 0, 0);
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        width: 120%;
+    }
+
+    header nav li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin-left: 17%;
+        font-size: 17px;
+    }
+    
+    header nav li {
+        display: block;
+        margin-top: 19px;
+    }
+    
+    .container1 h1 {
+        margin-right: 25px;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    h1 {
+        margin-top: 15px;
+        margin-left: 20%;
+    }
+
+    .container {
+        display: block;
+        max-width: 90%;
+        margin-left: 41px;
+    }
+    
+    #about .container {
+        display: block;
+        align-items: center;
+    }
+    
+    #about img {
+        margin-left: 25px;
+        height: auto;
+        width: 95%;
+    }
+    #about p {
+        margin-left: 0px;
+        font-size: 110%;
+        max-width: 470px;
+        margin-left: 40px;
+    }
+    
+    img {
+        border-radius: 5px;
+    }
+    
+    .loja-container {
+        max-width: 900px;
+    }
+    
+    .loja-container h2:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+    }
+
+    .produtos:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+        max-width: 1050px;
+        width: 308px;
+        margin-left: 0px;
+    }
+    .container.products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #products h1 {
+        margin-left: 30px;
+    }
+
+    #products img {
+        width: 270px;
+        margin-left: 50px;
+    }
+
+    .products h2, h4, button {
+        max-width: 270px;
+        margin-left: 50px;
+    }
+
+    h4 {
+        color: rgb(46, 46, 46);
+    }
+    
+    .botao {
+        width: 275px;
+        height: 25px;
+        background-color: rgb(45, 86, 174);
+        color: white;
+        display: block;
+        border: none;
+        border-radius: 4px;
+        margin-right: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    body {
+        background-color: rgb(220, 230, 230);
+    }
+    
+    .products {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    
+    .products a {
+        width: 100%;
+    }
+    
+    #products a {
+        display: inline-block;
+        margin-right: 35px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .icon-container {
+        position: relative;
+    }
+    
+    .icon-container i {
+        position: absolute;
+        bottom: 93%;
+        right: 18%;
+        color: rgba(0, 0, 0, 0.737);
+        background-color: white;
+        display: none;
+    }
+    
+    .icon-hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+    }
+    
+    header nav li {
+        font-weight: bold;
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    
+    header nav li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    header nav li:last-child a {
+        margin-right: 60px;
+    }
+    
+    .container {
+        display: grid;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+    
+    #about .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #about img {
+        margin-left: 15px;
+        height: auto;
+        width: 85%;
+    }
+    
+    #about h2, p {
+        margin-left: 30px;
+    }
+    
+    img {
+        border-radius: 5px;
+    }
+    
+    .loja-container {
+        margin-bottom: 100px;
+        max-width: 720px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+    
+    .loja-container h2 {
+        margin-bottom: 20px;
+    }
+    
+    .loja-container h2:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+    }
+
+    .produtos:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+        max-width: 690px;
+        margin-left: -20px;
+    }
+
+    #products h1 {
+        max-width: 900px;
+        margin-left: 87px;
+    }
+
+    #products h2 {
+        min-height: 60px;
+    }
+    
+    #products img {
+        width: 330px;
+    }
+    
+    h4 {
+        color: rgb(46, 46, 46);
+    }
+    
+    .botao {
+        width: 330px;
+        height: 25px;
+        background-color: rgb(45, 86, 174);
+        color: white;
+        display: block;
+        border: none;
+        border-radius: 4px;
+        margin-right: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    body {
+        background-color: rgb(220, 230, 230);
+    }
+    
+    .products {
+        display: block;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    
+    .products a {
+        width: 260px;
+        margin-left: 65px;
+    }
+    
+    #products a {
+        display: inline-block;
+        margin-right: 35px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .icon-container {
+        position: relative;
+    }
+    
+    .icon-container i {
+        position: absolute;
+        bottom: 93%;
+        right: -19%;
+        color: rgba(0, 0, 0, 0.737);
+        background-color: white;
+        display: none;
+    }
+    
+    .icon-hide {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
